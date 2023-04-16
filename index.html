@@ -1,33 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Equalizer Landing Page Website" />
+    <meta
+      name="keywords"
+      content="System Audio Equalizer, Volume Mixer, Parametric EQ"
+    />
+    <meta name="author" content="Solomon Nyamson" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Equalizer landing page</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  We make your music sound extraordinary.
+    <title>Frontend Mentor | Equalizer landing page</title>
+  </head>
+  <body class="landing main-grid">
+    <header class="landing__header">
+      <a href="#"><img src="assets/logo.svg" alt="equalizer logo" /></a>
+    </header>
+    <main class="landing__main">
+      <div class="headline">
+        <h1 class="headline__title">We make your music sound extraordinary.</h1>
 
-  A system audio equalizer specifically designed for Android and iOS. Freely tune the 
-  way your music sounds with a professional grade parametric EQ & volume mixer. Control 
-  bass, mids, treble, gain control, reverb, and more!
+        <p class="headline__desc">
+          A system audio equalizer specifically designed for Android and iOS.
+          Freely tune the way your music sounds with a professional grade
+          parametric EQ & volume mixer. Control bass, mids, treble, gain
+          control, reverb, and more!
+        </p>
+      </div>
 
-  Premium EQ
+      <div class="product">
+        <h2 class="product__title">Premium EQ</h2>
 
-  Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take 
-  your listening experience to a whole new level and access all our incredible features!
+        <p class="product__desc">
+          Get expert-level control with a robust equalizer, volume mixer, and
+          spatial audio. Take your listening experience to a whole new level and
+          access all our incredible features!
+        </p>
 
-  $4 / month
+        <p class="product__price">
+          <span class="product__price--amount"> $4 </span> / month
+        </p>
 
-  iOS Download
-  Android Download
+        <button class="button button__ios">
+          <img src="assets/icon-apple.svg" alt="apple button icon" />
+          iOS Download
+        </button>
+        <button class="button button__android">
+          <img src="assets/icon-android.svg" alt="apple button icon" />
+          Android Download
+        </button>
+      </div>
+    </main>
 
-  All rights reserved © Equalizer 2021
-  Have any problems? Contact us via social media or email us at equalizer@example.com
+    <footer class="landing__footer">
+      <img src="assets/logo.svg" alt="equalizer logo" class="footer_logo" />
+      <div class="footer__copyright">
+        <p>All rights reserved © Equalizer 2021</p>
+        <p>
+          Have any problems? Contact us via social media or email us at
+          <span>equalizer@example.com</span>
+        </p>
+      </div>
+      <div class="footer__social">
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a href="#">
+              <img src="assets/icon-facebook.svg" alt="facebook social icon" />
+            </a>
+          </li>
 
-</body>
+          <li class="footer__social-item">
+            <a href="#">
+              <img
+                src="assets/icon-instagram.svg"
+                alt="instagram social icon"
+              />
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#">
+              <img src="assets/icon-twitter.svg" alt="twitter social icon" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
