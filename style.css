@@ -245,6 +245,13 @@ html:focus-within {
   padding: 0;
 }
 
+.footer__social-item:hover,
+.footer__social-item:focus {
+  filter: invert(59%) sepia(13%) saturate(2140%) hue-rotate(324deg)
+    brightness(93%) contrast(111%);
+  transition: filter 200ms ease-in-out;
+}
+
 .copyright {
   color: var(--very-dark-black);
   font-size: 1rem;
