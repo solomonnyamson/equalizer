@@ -253,3 +253,35 @@ html:focus-within {
 .copyright__email {
   font-weight: 700;
 }
+
+/* RESPONSIVE DESIGN - TABLET VIEW */
+@media screen and (min-width: 45em) {
+  /* MAIN VIEW */
+  .landing {
+    background-image: url(/assets/bg-pattern-1.svg),
+      url(/assets/bg-main-tablet.png);
+    background-position: right -40px top -40px, right -100px top -250px;
+    background-size: 230px, auto;
+    background-repeat: no-repeat;
+  }
+
+  .landing__header {
+    padding-top: 3.875rem;
+  }
+
+  /* HEADLINE STYLE */
+  .headline {
+    margin-top: 5.9375rem;
+  }
+
+  .headline__title {
+    font-size: 4rem;
+    letter-spacing: -0.73px;
+    max-width: 20ch;
+  }
+
+  .headline__desc {
+    font-size: 1.125rem;
+    margin-top: 1.75rem;
+  }
+}
