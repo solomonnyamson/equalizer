@@ -26,6 +26,11 @@ p {
   padding: 0;
 }
 
+/* SMOOTH SCROLLING */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
 /* LAYOUT (MAIN)---- MOBILE FIRST */
 .main-grid {
   display: grid;
@@ -39,6 +44,7 @@ p {
 
 .landing__header {
   grid-area: "header";
+  padding: 2.5rem 2.5rem 0 2.5rem;
 }
 
 .landing__main {
@@ -47,20 +53,21 @@ p {
 
 .landing__footer {
   grid-area: "footer";
+  padding: 0 2.5rem 2.5rem 2.5rem;
 }
 
 .landing {
   background-image: url(/assets/bg-main-mobile.png);
-  background-size: cover;
+  background-size: contain;
   background-position: right -200px top -200px;
   background-repeat: no-repeat;
   min-height: 100vh;
-  padding: 2.5rem;
 }
 
 /* HEADLINE STYLE */
 .headline {
   margin-top: 4rem;
+  padding: 0 2.5rem;
 }
 
 .headline__title {
@@ -76,6 +83,126 @@ p {
   font-weight: 400;
   max-width: 47ch;
   margin-top: 1.25rem;
+}
+
+/* PRODUCT STYLE */
+.product {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4.25rem;
+  position: relative;
+}
+
+.product::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 6.125rem;
+  min-height: 37.5rem;
+  inset-inline: 0;
+  border-radius: 12px;
+  background-image: url(/assets/bg-pattern-2.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 280px;
+  background-color: var(--very-dark-black);
+}
+
+.product__illustration {
+  position: relative;
+  max-width: 13.0625rem;
+  margin-inline: auto;
+  z-index: 1;
+}
+
+.product__cta {
+  background-color: var(--soft-red);
+  border-radius: 12px;
+  position: relative;
+  padding: 3rem 2.25rem;
+  margin-top: 3rem;
+  z-index: 2;
+}
+
+.cta__title,
+.cta__desc,
+.cta__price {
+  color: var(--light-grayish-orange);
+}
+
+.cta__title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.cta__desc {
+  margin-top: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.cta__price {
+  margin-block: 2.25rem 2rem;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.cta__price--amount {
+  font-size: 4.0265rem;
+  font-weight: 700;
+}
+
+.button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.778;
+  letter-spacing: -0.18px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.44em;
+  padding: 0.8em 1.6em;
+  border-radius: 12px;
+  width: 100%;
+  display: block;
+}
+
+.button:last-of-type {
+  margin-top: 1rem;
+}
+
+.button__icon {
+  display: inline-block;
+  margin-bottom: -0.1rem;
+  margin-right: 0.1rem;
+}
+
+.button__ios {
+  background-color: var(--very-dark-black);
+  color: var(--light-grayish-orange);
+  transition: background-color 200ms ease-in-out;
+}
+
+.button__android {
+  background-color: var(--light-grayish-orange);
+  color: var(--very-dark-black);
+  transition: background-color 200ms ease-in-out;
+}
+
+.button__ios:hover,
+.button__ios:focus {
+  background-color: var(--soft-cyan);
+}
+
+.button__android:hover,
+.button__android:focus {
+  background-color: var(--light-orange);
 }
 
 /* LAYOUT (FOOTER) --- MOBILE FIRST */
