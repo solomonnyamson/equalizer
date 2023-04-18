@@ -284,4 +284,30 @@ html:focus-within {
     font-size: 1.125rem;
     margin-top: 1.75rem;
   }
+
+  /* PRODUCT STYLE */
+
+  /* FOOTER STYLE */
+  .landing__footer {
+    margin-top: 4rem;
+    grid-template-areas:
+      "logo"
+      "copyright social";
+  }
+
+  .footer__copyright {
+    grid-row: 2;
+    max-width: 25rem;
+    margin-top: 0.5rem;
+  }
+
+  .footer__social {
+    grid-column: 2;
+    grid-row: 2;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -0.5rem;
+  }
 }
