@@ -279,6 +279,7 @@ html:focus-within {
   /* HEADLINE STYLE */
   .headline {
     margin-top: 5.9375rem;
+    margin-bottom: 6.9375rem;
   }
 
   .headline__title {
@@ -294,9 +295,30 @@ html:focus-within {
 
   /* PRODUCT STYLE */
 
+  .product {
+    margin: 0 2.5rem;
+  }
+
+  .product::before {
+    top: 8.625rem;
+    background-position: left 55% top -15%;
+  }
+
+  .product__illustration {
+    max-width: 16.875rem;
+    margin-inline: 3.5rem;
+  }
+
+  .product__cta {
+    max-width: 24.9375rem;
+    padding: 3rem;
+    margin-top: -16.75rem;
+    margin-inline: auto 3.625rem;
+  }
+
   /* FOOTER STYLE */
   .landing__footer {
-    margin-top: 4rem;
+    margin-top: 5.4375rem;
     grid-template-areas:
       "logo"
       "copyright social";
