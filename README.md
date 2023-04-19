@@ -11,11 +11,11 @@ Welcome to the landing page for our equalizer system, designed specifically for 
 
 ## Setting Started
 
-To get started with our audio equalizer system, simply visit our website at []. From there, you can download the app for your mobile device and start customizing your music listening experience.
+To get started with our audio equalizer system, simply visit our website at [equalizer page](https://main--jazzy-sprite-c9a897.netlify.app/). From there, you can download the app for your mobile device and start customizing your music listening experience.
 
 ## Support
 
-If you encounter any issues with our system, please contact the support team at [].
+If you encounter any issues with our system, please contact the support team at [Solomon Nyamson](mailto:solomon.nyamson@amalitech.org).
 
 ## About Us
 
