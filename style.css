@@ -343,6 +343,14 @@ html:focus-within {
 
 /* RESPONSIVE DESIGN - DESKTOP VIEW */
 @media screen and (min-width: 70em) {
+  /* BACKGROUND STYLE */
+  .landing {
+    background-image: url(/assets/bg-pattern-1.svg),
+      url(/assets/bg-main-desktop.png);
+    background-position: right top -35px, right -180px top -260px;
+    background-size: auto;
+  }
+
   /* HEADLINE STYLE */
   .headline {
     margin-top: 7.9375rem;
@@ -367,6 +375,36 @@ html:focus-within {
 
   .product {
     margin: 0 10.375rem;
+  }
+
+  .product::before {
+    top: 13.25rem;
+    background-position: left 42% top -30%;
+    background-size: auto;
+  }
+
+  .product__illustration {
+    max-width: 19.5rem;
+    margin-inline: 6.375rem auto;
+  }
+
+  .product__cta {
+    max-width: 27.875rem;
+    padding: 3.5rem 3.375rem 3rem;
+    margin-top: -21.25rem;
+    margin-inline: auto 6rem;
+  }
+
+  .cta__desc {
+    margin-top: 1.375rem;
+  }
+
+  .cta__price {
+    margin-block: 2.5rem 2.875rem;
+  }
+
+  .button:last-of-type {
+    margin-top: 1rem;
   }
 
   /* FOOTER STYLE */
