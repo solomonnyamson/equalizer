@@ -340,3 +340,53 @@ html:focus-within {
     margin-bottom: -0.5rem;
   }
 }
+
+/* RESPONSIVE DESIGN - DESKTOP VIEW */
+@media screen and (min-width: 70em) {
+  /* HEADLINE STYLE */
+  .headline {
+    margin-top: 7.9375rem;
+    padding: 0 10.375rem;
+  }
+
+  .landing__header {
+    padding: 3.875rem 10.375rem 0 10.375rem;
+  }
+
+  .headline__title {
+    font-size: 5.5rem;
+    letter-spacing: -1px;
+  }
+
+  .headline__desc {
+    margin-top: 2.5rem;
+    max-width: 70ch;
+  }
+
+  /* PRODUCT STYLE */
+
+  .product {
+    margin: 0 10.375rem;
+  }
+
+  /* FOOTER STYLE */
+  .landing__footer {
+    grid-template-areas: "logo copyright social";
+    grid-gap: 0;
+    margin: 5.5rem 0 2.5rem 0;
+    padding-inline: 10.375rem;
+  }
+
+  .footer__logo {
+    grid-column: 1 / 2;
+    grid-row: 2;
+  }
+
+  .footer__copyright {
+    grid-column: 2 / 3;
+  }
+
+  .footer__social {
+    grid-column: 3;
+  }
+}
